@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/my_medicines"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_toggle_morning"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:text="@string/morning"
+        android:textColor="@color/black"
+        android:drawableBottom="@drawable/ic_pills_un_select"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="onMorningClick"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:background="@drawable/bg_toggle_un_select"
+        app:layout_constraintEnd_toStartOf="@+id/tv_toggle_afternoon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:ignore="UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:id="@+id/tv_toggle_afternoon"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:text="@string/afternoon"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_toggle_un_select"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginBottom="5dp"
+        android:onClick="onAfternoonClick"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_toggle_morning"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:drawableBottomCompat="@drawable/ic_pills_un_select" />
+
+
+    <TextView
+        android:id="@+id/tv_toggle_evening"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:text="@string/evening"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_toggle_un_select"
+        android:layout_marginStart="10dp"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onEveningClick"
+        app:layout_constraintEnd_toStartOf="@+id/tv_toggle_night"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_toggle_morning"
+        app:drawableBottomCompat="@drawable/ic_pills_un_select" />
+
+
+    <TextView
+        android:id="@+id/tv_toggle_night"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:text="@string/night"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_toggle_un_select"
+        android:layout_marginStart="5dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onNightClick"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_toggle_evening"
+        app:layout_constraintTop_toBottomOf="@+id/tv_toggle_afternoon"
+        app:drawableBottomCompat="@drawable/ic_pills_un_select" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

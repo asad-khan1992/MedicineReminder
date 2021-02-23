@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MedicineReminderTask</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="my_medicines">My Medicines</string>
+    <string name="take_medicine">Take medicine</string>
+    <string name="take_my_prescribed_medicine">Take my prescribed medicine</string>
+    <string name="_10_00">10:00</string>
+</resources>
